@@ -1,2 +1,1 @@
-# penguin_air_conditioning
-pe penguin air conns
+This is a website template, to help me speed things up. 
