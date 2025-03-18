@@ -15,11 +15,16 @@ export default function AboutSection() {
           {/* Left side with image - updated image source */}
           <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
             <Image
-              src="/banner.svg"
+              src="/banner2.svg"
               alt="Sletcher Systems - Web Development"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover"
+              className="object-contain p-4" // Changed from object-cover and added padding
+              style={{
+                objectFit: 'contain',
+                objectPosition: 'center bottom',
+                backgroundColor: '#1E293B'
+              }}
               quality={85}
             />
           </div>

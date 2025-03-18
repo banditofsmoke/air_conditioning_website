@@ -32,57 +32,57 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       <header className="fixed top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
-        <div className="container mx-auto flex h-14 items-center justify-between px-4">
-          <div className="flex items-center gap-2">
+        <div className="container mx-auto flex h-16 items-center justify-between px-8"> {/* Change px-4 to px-8 */}
+          <div className="flex items-center gap-3"> {/* Changed gap-2 to gap-3 */}
             <Image
               src="/banner.svg"
               alt="AirCool Pro Logo"
-              width={32}
-              height={32}
+              width={36}  // Increased from 32
+              height={36} // Increased from 32
               className="rounded-md"
             />
-            <span className="text-lg font-bold text-primary hidden sm:inline-block">
+            <span className="text-xl font-bold text-primary hidden sm:inline-block"> {/* Changed text-lg to text-xl */}
               AirCool Pro
             </span>
-            <span className="text-lg font-bold text-primary sm:hidden">
+            <span className="text-xl font-bold text-primary sm:hidden"> {/* Changed text-lg to text-xl */}
               AirCool
             </span>
           </div>
 
-          <nav className="hidden md:flex gap-6">
+          <nav className="hidden md:flex gap-16"> {/* Change gap-8 to gap-16 for more spacing */}
             <button
               onClick={() => scrollToSection("home")}
-              className="text-sm font-medium hover:text-primary transition-colors"
+              className="text-base font-medium hover:text-primary transition-colors" // Changed text-sm to text-base
             >
               Home
             </button>
             <button
               onClick={() => scrollToSection("services")}
-              className="text-sm font-medium hover:text-primary transition-colors"
+              className="text-base font-medium hover:text-primary transition-colors" // Changed text-sm to text-base
             >
               Services
             </button>
             <button
               onClick={() => scrollToSection("pricing")}
-              className="text-sm font-medium hover:text-primary transition-colors"
+              className="text-base font-medium hover:text-primary transition-colors" // Changed text-sm to text-base
             >
               Pricing
             </button>
             <button
               onClick={() => scrollToSection("gallery")}
-              className="text-sm font-medium hover:text-primary transition-colors"
+              className="text-base font-medium hover:text-primary transition-colors" // Changed text-sm to text-base
             >
               Gallery
             </button>
             <button
               onClick={() => scrollToSection("about")}
-              className="text-sm font-medium hover:text-primary transition-colors"
+              className="text-base font-medium hover:text-primary transition-colors" // Changed text-sm to text-base
             >
               About
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="text-sm font-medium hover:text-primary transition-colors"
+              className="text-base font-medium hover:text-primary transition-colors" // Changed text-sm to text-base
             >
               Contact
             </button>
@@ -91,11 +91,13 @@ export default function Home() {
           <div className="flex items-center gap-2">
             <button
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="p-2 rounded-md hover:bg-accent transition-colors"
+              className="relative p-2 rounded-md hover:bg-accent transition-colors"
               aria-label="Toggle theme"
             >
-              <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-              <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+              <div className="relative w-5 h-5"> {/* Added container div with fixed dimensions */}
+                <Sun className="absolute h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+                <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+              </div>
               <span className="sr-only">Toggle theme</span>
             </button>
 
@@ -225,11 +227,14 @@ export default function Home() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Image
-                  src="/placeholder.svg"
-                  alt="Sletcher Systems Logo"
+                  src="/banner.svg" // Changed from placeholder.svg
+                  alt="AirCool Pro Logo"
                   width={40}
                   height={40}
-                  className="rounded-md"
+                  className="rounded-md bg-white/5" // Added subtle background
+                  style={{
+                    objectFit: 'contain'
+                  }}
                 />
                 <span className="font-bold text-lg">AirCool Pro</span>
               </div>

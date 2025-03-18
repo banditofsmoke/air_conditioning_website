@@ -1,0 +1,74 @@
+<svg viewBox="0 0 800 600" width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#1E293B" />
+  
+  <!-- Heading -->
+  <text x="400" y="40" text-anchor="middle" fill="white" font-family="Helvetica, Arial, sans-serif" font-size="36" font-weight="bold">
+    Our Services
+  </text>
+  
+  <!-- Define blue gradient for cards -->
+  <defs>
+    <linearGradient id="boxGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2C5282" />
+      <stop offset="100%" stop-color="#3182CE" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Top Row: 2 Cards -->
+  <!-- Card 1: AI Solutions -->
+  <g>
+    <rect x="20" y="80" width="360" height="240" rx="10" fill="url(#boxGrad)" />
+    <text x="200" y="200" text-anchor="middle" fill="white" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="bold">
+      AI Solutions
+    </text>
+    <text x="200" y="230" text-anchor="middle" fill="white" font-family="Helvetica, Arial, sans-serif" font-size="16">
+      Cutting-edge AI &amp; automation
+    </text>
+  </g>
+  
+  <!-- Card 2: Web Development -->
+  <g>
+    <rect x="420" y="80" width="360" height="240" rx="10" fill="url(#boxGrad)" />
+    <text x="600" y="200" text-anchor="middle" fill="white" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="bold">
+      Web Development
+    </text>
+    <text x="600" y="230" text-anchor="middle" fill="white" font-family="Helvetica, Arial, sans-serif" font-size="16">
+      Modern, scalable apps
+    </text>
+  </g>
+  
+  <!-- Bottom Row: 3 Cards -->
+  <!-- Card 3: Data Solutions -->
+  <g>
+    <rect x="20" y="340" width="240" height="240" rx="10" fill="url(#boxGrad)" />
+    <text x="140" y="460" text-anchor="middle" fill="white" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="bold">
+      Data Solutions
+    </text>
+    <text x="140" y="490" text-anchor="middle" fill="white" font-family="Helvetica, Arial, sans-serif" font-size="16">
+      Data &amp; analytics
+    </text>
+  </g>
+  
+  <!-- Card 4: Tech Consulting -->
+  <g>
+    <rect x="280" y="340" width="240" height="240" rx="10" fill="url(#boxGrad)" />
+    <text x="400" y="460" text-anchor="middle" fill="white" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="bold">
+      Tech Consulting
+    </text>
+    <text x="400" y="490" text-anchor="middle" fill="white" font-family="Helvetica, Arial, sans-serif" font-size="16">
+      Strategic guidance
+    </text>
+  </g>
+  
+  <!-- Card 5: Tech Education -->
+  <g>
+    <rect x="540" y="340" width="240" height="240" rx="10" fill="url(#boxGrad)" />
+    <text x="660" y="460" text-anchor="middle" fill="white" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="bold">
+      Tech Education
+    </text>
+    <text x="660" y="490" text-anchor="middle" fill="white" font-family="Helvetica, Arial, sans-serif" font-size="16">
+      Personalized learning
+    </text>
+  </g>
+</svg>
