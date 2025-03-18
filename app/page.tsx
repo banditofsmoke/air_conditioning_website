@@ -32,61 +32,22 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       <header className="fixed top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
-        <div className="container mx-auto flex h-16 items-center justify-between px-8"> {/* Change px-4 to px-8 */}
-          <div className="flex items-center gap-3"> {/* Changed gap-2 to gap-3 */}
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex h-14 sm:h-16 items-center justify-between">
+          <div className="flex items-center gap-2">
             <Image
               src="/banner.svg"
               alt="AirCool Pro Logo"
-              width={36}  // Increased from 32
-              height={36} // Increased from 32
-              className="rounded-md"
+              width={28}
+              height={28}
+              className="rounded-md sm:w-36 sm:h-36"
             />
-            <span className="text-xl font-bold text-primary hidden sm:inline-block"> {/* Changed text-lg to text-xl */}
+            <span className="text-lg sm:text-xl font-bold text-primary hidden sm:inline-block">
               AirCool Pro
             </span>
-            <span className="text-xl font-bold text-primary sm:hidden"> {/* Changed text-lg to text-xl */}
+            <span className="text-lg font-bold text-primary sm:hidden">
               AirCool
             </span>
           </div>
-
-          <nav className="hidden md:flex gap-16"> {/* Change gap-8 to gap-16 for more spacing */}
-            <button
-              onClick={() => scrollToSection("home")}
-              className="text-base font-medium hover:text-primary transition-colors" // Changed text-sm to text-base
-            >
-              Home
-            </button>
-            <button
-              onClick={() => scrollToSection("services")}
-              className="text-base font-medium hover:text-primary transition-colors" // Changed text-sm to text-base
-            >
-              Services
-            </button>
-            <button
-              onClick={() => scrollToSection("pricing")}
-              className="text-base font-medium hover:text-primary transition-colors" // Changed text-sm to text-base
-            >
-              Pricing
-            </button>
-            <button
-              onClick={() => scrollToSection("gallery")}
-              className="text-base font-medium hover:text-primary transition-colors" // Changed text-sm to text-base
-            >
-              Gallery
-            </button>
-            <button
-              onClick={() => scrollToSection("about")}
-              className="text-base font-medium hover:text-primary transition-colors" // Changed text-sm to text-base
-            >
-              About
-            </button>
-            <button
-              onClick={() => scrollToSection("contact")}
-              className="text-base font-medium hover:text-primary transition-colors" // Changed text-sm to text-base
-            >
-              Contact
-            </button>
-          </nav>
 
           <div className="flex items-center gap-2">
             <button
@@ -94,9 +55,9 @@ export default function Home() {
               className="relative p-2 rounded-md hover:bg-accent transition-colors"
               aria-label="Toggle theme"
             >
-              <div className="relative w-5 h-5"> {/* Added container div with fixed dimensions */}
-                <Sun className="absolute h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-                <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+              <div className="relative w-4 sm:w-5 h-4 sm:h-5">
+                <Sun className="absolute h-4 w-4 sm:h-5 sm:w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+                <Moon className="absolute h-4 w-4 sm:h-5 sm:w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
               </div>
               <span className="sr-only">Toggle theme</span>
             </button>
@@ -106,20 +67,13 @@ export default function Home() {
               className="hidden md:flex items-center gap-2 text-sm font-medium hover:text-primary transition-colors"
             >
               <Phone className="h-4 w-4" />
-              +27 63 264 2657
-            </Link>
-
-            <Link
-              href="tel:+27632642657"
-              className="bg-[#0EA5E9] hover:bg-[#0EA5E9]/90 text-white rounded-md px-4 py-2 text-sm font-medium transition-colors hidden sm:flex items-center"
-            >
-              <Phone className="mr-2 h-4 w-4" /> Call Now
+              <span className="hidden lg:inline">+27 63 264 2657</span>
             </Link>
 
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon" className="md:hidden">
-                  <Menu className="h-6 w-6" />
+                  <Menu className="h-5 w-5" />
                   <span className="sr-only">Open menu</span>
                 </Button>
               </SheetTrigger>
@@ -211,7 +165,7 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="flex-1 pt-8"> {/* Reduced padding from pt-14 to pt-8 */}
+      <main className="flex-1 pt-8">
         <HeroSection scrollToSection={scrollToSection} />
         <ServicesSection scrollToSection={scrollToSection} />
         <PricingSection />
@@ -227,11 +181,11 @@ export default function Home() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Image
-                  src="/banner.svg" // Changed from placeholder.svg
+                  src="/banner.svg"
                   alt="AirCool Pro Logo"
                   width={40}
                   height={40}
-                  className="rounded-md bg-white/5" // Added subtle background
+                  className="rounded-md bg-white/5"
                   style={{
                     objectFit: 'contain'
                   }}

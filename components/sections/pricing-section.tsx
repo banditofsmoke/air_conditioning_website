@@ -146,8 +146,10 @@ export default function PricingSection() {
     <section id="pricing" className="py-16 bg-muted/50">
       <div className="container">
         <div className="text-center mb-10">
-          <h2 className="text-3xl font-bold mb-4">Air Conditioning Units</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#3FA9F5] dark:text-[#5BC0EB]">
+            Air Conditioning Units
+          </h2>
+          <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">
             Browse our selection of quality air conditioning systems from trusted brands
           </p>
         </div>
@@ -160,7 +162,7 @@ export default function PricingSection() {
           </TabsList>
 
           <TabsContent value="avalanche">
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
               {products.avalanche.map((product, index) => (
                 <Card key={index} className="flex flex-col">
                   <CardHeader>
@@ -189,7 +191,7 @@ export default function PricingSection() {
           </TabsContent>
 
           <TabsContent value="kuhl">
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
               {products.kuhl.map((product, index) => (
                 <Card key={index} className="flex flex-col">
                   <CardHeader>
@@ -218,7 +220,7 @@ export default function PricingSection() {
           </TabsContent>
 
           <TabsContent value="smartk">
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
               {products.smartK.map((product, index) => (
                 <Card key={index} className="flex flex-col">
                   <CardHeader>

@@ -4,9 +4,9 @@ import Image from "next/image"
 
 export default function HeroSection({ scrollToSection }: { scrollToSection: (id: string) => void }) {
   return (
-    <section id="home" className="relative">
+    <section id="home" className="relative pt-14 sm:pt-16"> {/* Add padding top for header */}
       {/* Banner image section */}
-      <div className="w-full h-[50vh] relative">
+      <div className="w-full h-[30vh] sm:h-[50vh] relative">
         <Image
           src="/banner.svg"
           alt="Professional Air Conditioning Solutions"

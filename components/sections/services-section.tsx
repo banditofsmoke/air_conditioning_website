@@ -7,12 +7,14 @@ export default function ServicesSection({ scrollToSection }: { scrollToSection: 
     <section id="services" className="py-16 bg-background">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-[#3FA9F5] dark:text-[#5BC0EB]">Our Services</h2>
-          <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#3FA9F5] dark:text-[#5BC0EB]">
+            Our Services
+          </h2>
+          <p className="mt-4 text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">
             From residential retreats to commercial spaces, we deliver the perfect chill—fast and affordably.
           </p>
         </div>
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           <ServiceCard
             title="Domestic Air-Conditioning"
             description="Create a refreshing oasis in your home. Our energy-efficient units guarantee comfort without breaking the bank."

@@ -46,9 +46,11 @@ export default function GallerySection() {
     <section id="gallery" className="py-16 bg-background">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-[#3FA9F5] dark:text-[#5BC0EB]">Our Projects</h2>
-          <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-            Browse through our recent installations and projects across Port Elizabeth/Gqeberha.
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#3FA9F5] dark:text-[#5BC0EB]">
+            Our Projects
+          </h2>
+          <p className="mt-4 text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">
+            Gallery of our recent installations and projects
           </p>
         </div>
 
