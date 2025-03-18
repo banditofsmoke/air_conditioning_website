@@ -1,0 +1,26 @@
+<svg width="1500" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Define a horizontal blue gradient -->
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#87CEFA; stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E90FF; stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background with gradient fill -->
+  <rect width="1500" height="400" fill="url(#grad)" />
+  
+  <!-- Abstract airflow line -->
+  <path d="M0 200 Q375 100 750 200 T1500 200" 
+        stroke="white" stroke-width="5" fill="none" opacity="0.7" />
+  
+  <!-- Optional text overlay -->
+  <text x="50%" y="45%" dominant-baseline="middle" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="30" fill="white">
+    AirCool Pro HVAC Solutions
+  </text>
+  <text x="50%" y="65%" dominant-baseline="middle" text-anchor="middle" 
+        font-family="Arial, sans-serif" font-size="16" fill="white">
+    Demo Template by Sletcher Systems
+  </text>
+</svg>

@@ -6,22 +6,22 @@ export default function TestimonialsSection() {
     <section id="testimonials" className="py-16 bg-background">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-[#3FA9F5] dark:text-[#5BC0EB]">What Our Clients Say</h2>
+          <h2 className="text-3xl font-bold text-[#3FA9F5] dark:text-[#5BC0EB]">Client Testimonials</h2>
           <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-            Serving Port Elizabeth/Gqeberha & Surrounding Areas with pride.
+            Demo reviews showcasing potential client feedback
           </p>
         </div>
         <Tabs defaultValue="testimonial1" className="max-w-3xl mx-auto">
           <TabsList className="grid w-full grid-cols-3">
             <TabsTrigger value="testimonial1">Residential</TabsTrigger>
             <TabsTrigger value="testimonial2">Commercial</TabsTrigger>
-            <TabsTrigger value="testimonial3">Refrigeration</TabsTrigger>
+            <TabsTrigger value="testimonial3">Industrial</TabsTrigger>
           </TabsList>
           <TabsContent value="testimonial1" className="mt-6">
             <TestimonialCard
-              name="Sarah Johnson"
+              name="Demo Client"
               role="Homeowner"
-              testimonial="Penguin Air-conditioning installed our new air conditioning system and we couldn't be happier. The team was professional, efficient, and left our home spotless. The cooling is perfect and our energy bills have actually gone down!"
+              testimonial="Outstanding service and professionalism. The installation was quick and efficient, resulting in perfect temperature control throughout our home."
             />
           </TabsContent>
           <TabsContent value="testimonial2" className="mt-6">

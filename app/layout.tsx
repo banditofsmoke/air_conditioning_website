@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Penguin Air-conditioning and Refrigeration',
-  description: 'Created by Sletcher Systems',
-  generator: 'Ice Cold',
+  title: 'AirCool Pro - HVAC Solutions Demo',
+  description: 'A demo HVAC website template by Sletcher Systems',
+  generator: 'Next.js - Sletcher Systems',
 }
 
 export default function RootLayout({

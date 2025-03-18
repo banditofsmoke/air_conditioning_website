@@ -1,5 +1,8 @@
 import Image from "next/image"
+import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
+import { ArrowUpRight } from "lucide-react"
 
 export default function AboutSection() {
   return (
@@ -9,60 +12,83 @@ export default function AboutSection() {
     >
       <div className="container">
         <div className="grid gap-8 md:grid-cols-2 items-center">
+          {/* Left side with image - updated image source */}
           <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
             <Image
-              src="/bot1.jpg"
-              alt="Johan Kruger - Owner/Manager"
+              src="/banner.svg"
+              alt="Sletcher Systems - Web Development"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
               quality={85}
             />
           </div>
+
+          {/* Right side content */}
           <div className="space-y-6">
-            <h2 className="text-3xl font-bold text-[#3FA9F5] dark:text-[#5BC0EB]">About Us</h2>
-            <h3 className="text-xl font-semibold">Meet Johan Kruger</h3>
+            <h2 className="text-3xl font-bold text-[#3FA9F5] dark:text-[#5BC0EB]">About the Developer</h2>
+            <h3 className="text-xl font-semibold">Sletcher Systems</h3>
             <p className="text-muted-foreground">
-              Owner/Manager of Penguin Air-conditioning and Refrigeration with a Bachelor of Engineering (BEng) in
-              Heating, Air Conditioning, Ventilation and Refrigeration Maintenance Technology/Technician from Neksa
-              College.
+              We specialize in creating modern, efficient web solutions for businesses across various industries. With a focus on delivering exceptional user experiences and performance-optimized applications.
             </p>
             <p className="text-muted-foreground">
-              With years of experience in the industry, Johan has built Penguin Air-conditioning and Refrigeration on
-              the foundations of reliability, expertise, and customer satisfaction. We're committed to providing the
-              best cooling solutions for homes and businesses throughout Port Elizabeth/Gqeberha and surrounding areas.
+              This demo template showcases our expertise in building industry-specific websites that help businesses establish a strong online presence and connect with their customers effectively.
             </p>
+            
+            {/* Badges section - keeping as is */}
             <div className="flex flex-wrap items-center gap-2">
               <Badge
                 variant="outline"
                 className="text-[#3FA9F5] dark:text-[#5BC0EB] border-[#3FA9F5] dark:border-[#5BC0EB]"
               >
-                Professional
+                Web Development
               </Badge>
               <Badge
                 variant="outline"
                 className="text-[#3FA9F5] dark:text-[#5BC0EB] border-[#3FA9F5] dark:border-[#5BC0EB]"
               >
-                Reliable
+                Custom Solutions
               </Badge>
               <Badge
                 variant="outline"
                 className="text-[#3FA9F5] dark:text-[#5BC0EB] border-[#3FA9F5] dark:border-[#5BC0EB]"
               >
-                Experienced
+                Modern Tech Stack
               </Badge>
               <Badge
                 variant="outline"
                 className="text-[#3FA9F5] dark:text-[#5BC0EB] border-[#3FA9F5] dark:border-[#5BC0EB]"
               >
-                Certified
+                Professional Service
               </Badge>
-              <Badge
-                variant="outline"
-                className="text-[#3FA9F5] dark:text-[#5BC0EB] border-[#3FA9F5] dark:border-[#5BC0EB]"
-              >
-                Local Business
-              </Badge>
+            </div>
+
+            {/* New CTA section */}
+            <div className="pt-4 space-y-4">
+              <div className="flex flex-wrap gap-4">
+                <Link href="https://www.sletchersystems.com/solutions" target="_blank">
+                  <Button className="bg-[#3FA9F5] hover:bg-[#3FA9F5]/90 text-white">
+                    View Our Services
+                    <ArrowUpRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
+                <Link href="https://www.sletchersystems.com" target="_blank">
+                  <Button variant="outline" className="border-[#3FA9F5] text-[#3FA9F5] hover:bg-[#3FA9F5]/10">
+                    Visit Portfolio
+                    <ArrowUpRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
+              </div>
+              <p className="text-sm text-muted-foreground">
+                Interested in a custom website for your HVAC business? 
+                <Link 
+                  href="https://wa.me/27632642657" 
+                  target="_blank"
+                  className="text-[#3FA9F5] hover:underline ml-1"
+                >
+                  Let's chat
+                </Link>
+              </p>
             </div>
           </div>
         </div>

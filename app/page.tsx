@@ -4,7 +4,7 @@ import { useState } from "react"
 import { useTheme } from "next-themes"
 import Link from "next/link"
 import Image from "next/image"
-import { Phone, Facebook, Menu, X, Sun, Moon, ChevronRight } from "lucide-react"
+import { Phone, Facebook, Menu, X, Sun, Moon, ChevronRight, Globe } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
@@ -35,17 +35,17 @@ export default function Home() {
         <div className="container mx-auto flex h-14 items-center justify-between px-4">
           <div className="flex items-center gap-2">
             <Image
-              src="/logo.svg" // Update with your actual logo
-              alt="Penguin Air-conditioning"
+              src="/banner.svg"
+              alt="AirCool Pro Logo"
               width={32}
               height={32}
               className="rounded-md"
             />
             <span className="text-lg font-bold text-primary hidden sm:inline-block">
-              Penguin Air-conditioning
+              AirCool Pro
             </span>
             <span className="text-lg font-bold text-primary sm:hidden">
-              Penguin AC&R
+              AirCool
             </span>
           </div>
 
@@ -100,15 +100,15 @@ export default function Home() {
             </button>
 
             <Link
-              href="tel:+27712031347"
+              href="tel:+27632642657"
               className="hidden md:flex items-center gap-2 text-sm font-medium hover:text-primary transition-colors"
             >
               <Phone className="h-4 w-4" />
-              +27 71 203 1347
+              +27 63 264 2657
             </Link>
 
             <Link
-              href="tel:+27712031347"
+              href="tel:+27632642657"
               className="bg-[#0EA5E9] hover:bg-[#0EA5E9]/90 text-white rounded-md px-4 py-2 text-sm font-medium transition-colors hidden sm:flex items-center"
             >
               <Phone className="mr-2 h-4 w-4" /> Call Now
@@ -126,13 +126,13 @@ export default function Home() {
                   <div className="flex items-center justify-between border-b pb-4">
                     <div className="flex items-center gap-2">
                       <Image
-                        src="/placeholder.svg?height=40&width=40"
-                        alt="Penguin Air-conditioning and Refrigeration Logo"
+                        src="/banner.svg"
+                        alt="AirCool Pro Logo"
                         width={32}
                         height={32}
                         className="rounded-md"
                       />
-                      <span className="font-bold text-lg">Penguin AC&R</span>
+                      <span className="font-bold text-lg">AirCool Pro</span>
                     </div>
                     <SheetTrigger asChild>
                       <Button variant="ghost" size="icon">
@@ -191,11 +191,11 @@ export default function Home() {
                     <div className="flex items-center gap-3">
                       <Facebook className="h-5 w-5 text-primary" />
                       <Link
-                        href="https://facebook.com/penguin.ref"
+                        href="https://www.facebook.com/waynesletcher"
                         target="_blank"
                         className="hover:text-primary transition-colors"
                       >
-                        facebook.com/penguin.ref
+                        https://www.facebook.com/waynesletcher
                       </Link>
                     </div>
                     <Button className="w-full bg-[#0EA5E9] hover:bg-[#0EA5E9]/90 text-white">
@@ -225,16 +225,16 @@ export default function Home() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Image
-                  src="/placeholder.svg?height=40&width=40"
-                  alt="Penguin Air-conditioning and Refrigeration Logo"
+                  src="/placeholder.svg"
+                  alt="Sletcher Systems Logo"
                   width={40}
                   height={40}
-                  className="rounded-md bg-white"
+                  className="rounded-md"
                 />
-                <span className="text-xl font-bold">Penguin Air-conditioning</span>
+                <span className="font-bold text-lg">AirCool Pro</span>
               </div>
               <p className="text-sm text-gray-300">
-                Your #1 Choice for Air-Conditioning & Refrigeration in Port Elizabeth/Gqeberha.
+                A Professional HVAC Solutions Template by Sletcher Systems
               </p>
             </div>
             <div>
@@ -280,32 +280,38 @@ export default function Home() {
             </div>
             <div>
               <h3 className="text-lg font-semibold mb-4">Connect With Us</h3>
-              <div className="flex items-center gap-3 mb-4">
-                <Link href="tel:+27712031347" className="text-sm text-gray-300 hover:text-white flex items-center">
-                  <Phone className="h-4 w-4 mr-2" /> +27 71 203 1347
-                </Link>
-              </div>
-              <div className="flex items-center gap-3">
+              <div className="space-y-2">
                 <Link
-                  href="https://facebook.com/penguin.ref"
-                  target="_blank"
-                  className="text-sm text-gray-300 hover:text-white flex items-center"
+                  href="tel:+27632642657"
+                  className="text-sm text-gray-300 hover:text-white flex items-center gap-2"
                 >
-                  <Facebook className="h-4 w-4 mr-2" /> facebook.com/penguin.ref
+                  <Phone className="h-4 w-4" /> +27 63 264 2657
                 </Link>
+                <Link
+                  href="https://www.facebook.com/waynesletcher"
+                  target="_blank"
+                  className="text-sm text-gray-300 hover:text-white flex items-center gap-2"
+                >
+                  <Facebook className="h-4 w-4" /> facebook.com/waynesletcher
+                </Link>
+                <Link
+                  href="https://www.sletchersystems.com"
+                  target="_blank"
+                  className="text-sm text-gray-300 hover:text-white flex items-center gap-2"
+                >
+                  <Globe className="h-4 w-4" /> sletchersystems.com
+                </Link>
+                <div className="flex items-center gap-3">
+                  <Phone className="h-5 w-5 text-primary" />
+                  <Link href="tel:+27632642657" className="hover:text-primary transition-colors">
+                    +27 63 264 2657
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
-          <div className="border-t border-gray-700 mt-8 pt-8 text-sm text-gray-300 flex flex-col md:flex-row justify-between items-center">
-            <p>© {new Date().getFullYear()} Penguin Air-conditioning and Refrigeration. All rights reserved.</p>
-            <div className="flex gap-4 mt-4 md:mt-0">
-              <Link href="#" className="hover:text-white">
-                Privacy Policy
-              </Link>
-              <Link href="#" className="hover:text-white">
-                Terms of Service
-              </Link>
-            </div>
+          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
+            © {new Date().getFullYear()} Sletcher Systems. All rights reserved. Demo Template.
           </div>
         </div>
       </footer>
